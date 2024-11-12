@@ -10,3 +10,8 @@ jobs:
         run: whoami
       - name: "Step2"
         run: pwd
+  test-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Another Step1"
+        run: ls ${{github.workspace}}
