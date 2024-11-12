@@ -1,0 +1,9 @@
+name: Github Actions Test
+run-name: test-action
+on:
+  workflow_dispatch:
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      run: ls ${{github.workspace}}
